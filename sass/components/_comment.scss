@@ -1,0 +1,79 @@
+@import '../variables/variable';
+@import '../mixin/mixin';
+
+
+/*========================================================================================================
+                                            comment part start
+===========================================================================================================*/
+#comment {
+    padding: 70px 0;
+
+    .com_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .form {
+            width: 45%;
+
+            form {
+                h2 {
+                    @include ts(#413d4b, 22px, 700, $ff_play);
+                    margin-bottom: 20px;
+                }
+
+                input {
+                    padding: 15px 20px;
+                    width: 100%;
+                    margin-bottom: 23px;
+                    border: 1px solid #e5e5e5;
+                    @include ts(#413d4b, 14px, 300, $ff_rob);
+                }
+
+                textarea {
+                    padding: 20px 20px 165px;
+                    width: 100%;
+                    margin-bottom: 23px;
+                    border: 1px solid #e5e5e5;
+                    @include ts(#413d4b, 14px, 300, $ff_rob);
+                    resize: none;
+                }
+
+                button {
+                    padding: 14px 32px;
+                    border: 1px solid #00e0d0;
+                    border-radius: 3px;
+                    background: transparent;
+                    @include ts(#00e0d0, 16px, 400, $ff_hamm);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .com_logo {
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            h2 {
+                @include ts(#413d4b, 22px, 700, $ff_play);
+                margin-bottom: -16px;
+                width: 100%;
+            }
+
+            .logo_img {
+                width: 45%;
+
+                img {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/*========================================================================================================
+                                            comment part end
+===========================================================================================================*/

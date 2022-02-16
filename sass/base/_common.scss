@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+@font-face {
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+    font-family: 'myriad-reg';
+}
+
+@font-face {
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-BOLD.OTF);
+    font-family: 'myriad-bol';
+}
+
+@font-face {
+    src: url(../myriad-pro-cufonfonts/MyriadPro-Light.otf);
+    font-family: 'myriad-lig';
+}
+
+@font-face {
+    src: url(../myriad-pro-cufonfonts/MYRIADPRO-SEMIBOLD.OTF);
+    font-family: 'myriad-sem';
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+
+.container {
+    width: 940px;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.text_center {
+    text-align: center;
+}
+
+
+/*================================================================================================================================
+                                                            common css end
+==================================================================================================================================*/

@@ -1,0 +1,57 @@
+@import "../variables/variable";
+@import "../mixin/mixin";
+
+
+
+
+/*================================================================================================================================
+                                                            story part start
+==================================================================================================================================*/
+#story {
+    padding: 70px 0;
+
+    .story_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .story_img {
+            width: 380px;
+            text-align: center;
+        }
+
+        .story_text {
+            width: 540px;
+
+            h3 {
+                @include ts(#413d4b, 22px, 700, $ff_play);
+                margin-bottom: 15px;
+            }
+
+            p {
+                @include ts(#413d4b, 14px, 300, $ff_rob);
+                line-height: 22px;
+            }
+
+            span {
+                @include ts(#413d4b, 14px, 300, $ff_rob);
+                display: block;
+                line-height: 22px;
+                margin-top: 20px;
+            }
+
+            a {
+                @include ts(#00e0d0, 16px, 400, $ff_hamm);
+                padding: 10px 15px;
+                border: 1px solid #00e0d0;
+                border-radius: 2px;
+                margin-top: 25px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*================================================================================================================================
+                                                            story part end
+==================================================================================================================================*/

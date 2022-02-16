@@ -1,0 +1,90 @@
+@import "../variables/variable";
+@import "../mixin/mixin";
+
+
+
+
+/*================================================================================================================================
+                                                            team part start
+==================================================================================================================================*/
+#team {
+    padding: 70px 0;
+    position: relative;
+    z-index: 999;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, #09052f 0% to left, #311d5e 100%);
+        z-index: -1;
+        opacity: 85%;
+    }
+
+    .common_head {
+        h3 {
+            @include ts(#fff, 22px, 700, $ff_play);
+        }
+
+        p {
+            @include ts(#f9f9f9, 14px, 400, $ff_play);
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -17px;
+                left: 50%;
+                height: 2px;
+                width: 50px;
+                background: #c6c4c9;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .team_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 70px;
+
+        .team_col {
+            width: 22.79%;
+            height: 308px;
+
+            .col_img {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+
+            .col_text {
+                border-bottom: 1px solid #7c7990;
+                border-left: 1px solid #7c7990;
+                border-right: 1px solid #7c7990;
+                padding-top: 15px;
+                padding-bottom: 20px;
+
+                h3 {
+                    @include ts(#fff, 14px, 900, $ff_rob);
+                }
+
+                h4 {
+                    @include ts(#fafafa, 13px, 400, $ff_rob);
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+/*================================================================================================================================
+                                                            team part end
+==================================================================================================================================*/

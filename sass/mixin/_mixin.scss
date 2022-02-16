@@ -1,0 +1,6 @@
+@mixin ts($c, $fs, $fw, $ff) {
+    color: $c;
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: $ff;
+}

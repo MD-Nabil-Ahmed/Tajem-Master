@@ -1,0 +1,95 @@
+@import "../variables/variable";
+@import "../mixin/mixin";
+
+
+
+
+/*================================================================================================================================
+                                                            slider part start
+==================================================================================================================================*/
+#slider {
+    padding: 120px 0 70px;
+    position: relative;
+    z-index: 999;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, #09052f 0% to left, #311d5e 100%);
+        opacity: 85%;
+        z-index: -1;
+    }
+
+    .slider_img {
+
+        .img {
+            margin-bottom: 35px;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        .text {
+
+            p {
+                @include ts(#fff, 16px, 400, $ff_play);
+                line-height: 26px;
+                margin-top: 40px;
+                width: 780px;
+                margin: 0 auto;
+            }
+        }
+
+        .head {
+            margin-top: 30px;
+
+            h3 {
+                @include ts(#fff, 14px, 900, $ff_rob);
+            }
+
+            h4 {
+                @include ts(#fff, 13px, 300, $ff_rob);
+            }
+        }
+
+        .slick-dots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            li {
+                button {
+                    font-size: 0;
+                    height: 20px;
+                    width: 20px;
+                    background: #fff;
+                    color: red;
+                    border: 6px solid #fff;
+                    border-radius: 50%;
+                    margin: 30px 15px;
+                    cursor: pointer;
+                    transition: all linear .3s;
+
+                    &:hover {
+                        background: #00e0d0;
+                    }
+                }
+            }
+
+            .slick-active {
+                button {
+                    background: #00e0d0;
+                }
+            }
+        }
+    }
+}
+
+/*================================================================================================================================
+                                                            slider part end
+==================================================================================================================================*/

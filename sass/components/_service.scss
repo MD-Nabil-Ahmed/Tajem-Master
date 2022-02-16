@@ -1,0 +1,61 @@
+@import "../variables/variable";
+@import "../mixin/mixin";
+
+
+
+
+/*================================================================================================================================
+                                                            service part start
+==================================================================================================================================*/
+#service {
+    padding: 60px 0 100px;
+
+    .common_head {
+        h3 {
+            @include ts(#413d4b, 22px, 700, $ff_play);
+        }
+
+        p {
+            @include ts(#2f2d35, 14px, 400, $ff_play);
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: -17px;
+                left: 50%;
+                height: 2px;
+                width: 50px;
+                background: #c6c4c9;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .ser_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .ser_col {
+            width: 30%;
+            margin-top: 75px;
+
+            h3 {
+                @include ts(#413d4b, 14px, 900, $ff_rob);
+                margin-top: 30px;
+            }
+
+            p {
+                @include ts(#333333, 14px, 300, $ff_rob);
+                line-height: 22px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+/*================================================================================================================================
+                                                            service part end
+==================================================================================================================================*/

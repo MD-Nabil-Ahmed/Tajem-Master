@@ -1,0 +1,155 @@
+@import '../variables/variable';
+@import '../mixin/mixin';
+
+
+
+
+/*================================================================================================
+                                                footer part start
+==================================================================================================*/
+#footer {
+    padding: 70px 0;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #09052f, #311d5e);
+        opacity: 85%;
+        z-index: -1;
+    }
+
+    .foot_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .foot_col {
+            width: 32%;
+
+            p {
+                @include ts(#fff, 14px, 300, $ff_rob);
+                line-height: 26px;
+                margin-top: 15px;
+            }
+
+            h4 {
+                @include ts(#fff, 15px, 900, $ff_rob);
+                margin: 20px 0 30px;
+            }
+
+            li {
+                list-style: none;
+
+                i {
+                    color: #fff;
+                    margin-right: 15px;
+                }
+
+                a {
+                    @include ts(#fff, 14px, 400, $ff_rob);
+                    line-height: 26px;
+
+                    span {
+                        display: inline-block;
+                        margin-left: 25px;
+                    }
+                }
+            }
+
+            input {
+                padding: 17px 15px;
+                border: 1px solid #9e98b0;
+                width: 209px;
+                background: transparent;
+                @include ts(#fff, 14px, 300, $ff_rob);
+            }
+
+            button {
+                padding: 14px 23px;
+                background: #9e98b0;
+                border: 1px solid #9e98b0;
+                cursor: pointer;
+
+                i {
+                    font-size: 20px;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                li {
+                    text-align: center;
+                    margin: 27px 0;
+
+                    a {
+                        font-size: 15px;
+                        position: relative;
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 35px;
+                            height: 35px;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            text-align: center;
+                        }
+
+                        i {
+                            margin: 10px;
+                            z-index: 1;
+                        }
+
+                        &:hover::after {
+                            background: #fff;
+                            border-color: #fff;
+                            z-index: -1;
+                        }
+
+                        &:hover i {
+                            color: 000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .foot_row_2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        .link {
+            width: 50%;
+
+            a {
+                @include ts(#fff, 14px, 400, $ff_rob);
+                margin-right: 30px;
+            }
+        }
+
+        .copy {
+            width: 50%;
+            text-align: end;
+            @include ts(#fff, 14px, 400, $ff_rob);
+        }
+    }
+}
+
+/*================================================================================================
+                                                footer part end
+==================================================================================================*/

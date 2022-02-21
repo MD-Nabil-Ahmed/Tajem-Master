@@ -9,11 +9,11 @@ $(window).scroll(function () {
         $('#menu').removeClass('fix_menu');
     }
 });
-
-
 // menu fix end
 
 
+
+// back to top button start
 $('#bc_top').click(function () {
     $('html, body').animate({
         scrollTop: 0,
@@ -35,6 +35,8 @@ $(window).scroll(function () {
 
 
 
+
+// slider part start
 $('.slider_img').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
